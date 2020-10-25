@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MdCheckBoxOutlineBlank, MdCheckBox } from 'react-icons/md';
+import { MdCheckBoxOutlineBlank, MdCheckBox, MdFilterTiltShift } from 'react-icons/md';
 import { AiOutlineNumber } from 'react-icons/ai'
 import cn from 'classnames';
 import '../styles/QuestionListItem.scss';
@@ -12,7 +12,6 @@ const QuestionListItem = ({ question }) => {
     const [checked_2, setChecked_2] = useState('');
 
     const onToggleOption1 =(e)=> {
-        console.log(e)
         const NextVal1 = !checked_1;
         if (NextVal1 !== false) {
             setChecked_1(NextVal1);

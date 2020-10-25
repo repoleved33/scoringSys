@@ -35,7 +35,7 @@ function createWindow() {
         mainWindow.loadFile(path.join(__dirname, '../build/index.html'));
     }
     // Emitted when the window is closed.
-    mainWindow.maximize();
+    //mainWindow.maximize();
     mainWindow.on('closed', function () {
         mainWindow = undefined;
     });

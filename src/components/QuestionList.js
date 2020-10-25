@@ -2,11 +2,11 @@ import React from 'react';
 import QuestionListItem from './QuestionListItem';
 import '../styles/QuestionList.scss';
 
-const QuestionList = ({ questionlist }) => {
+const QuestionList = ({ questions }) => {
     return (
         <div className="QuestionList">
-            {questionlist.map( question => (
-                <QuestionListItem question={question} key={question.id}/>
+            {questions.map( question => (
+                <QuestionListItem question={question} key={question.id} />
             ))}
         </div>
     );
